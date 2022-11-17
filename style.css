@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    background-color: #282828;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.clock{
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    position: relative;
+    border: 5px solid #282828;
+box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+inset 4px 4px 10px rgba(0, 0,0, 0.5),
+inset -4px -4px 10px rgba(67, 67, 67, 0.5), 
+4px 4px 10px rgba(0, 0,0, 0.3);
+color: #ffff;
+}
+.clock::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+}
+.name{
+    position: absolute;
+    top: 60%;
+  left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.hand {
+    --rotation: 0deg;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    background-color: black;
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(var(--rotation));
+    border-radius: 30px;
+}
+
+ .hour {
+    width: 7px;
+    height: 30%;
+
+}
+
+.mins {
+    width: 5px;
+    height: 33%;
+    --rotation: 0deg;
+}
+
+.secs {
+    width: 3px;
+    height: 35%;
+    --rotation: 0deg;
+    background-color:lightblue;
+} 
+
+.number {
+    position: absolute;
+    font-size: 1.3rem;
+}
+
+.num1{
+    top: 40px;
+    left: 225px;
+}
+
+.num2{
+    top: 85px;
+    left: 275px;
+}
+
+.num3{
+    top: 155px;
+    left: 295px;
+}
+
+.num4 {
+    top: 220px;
+    left: 275px;
+}
+
+.num5 {
+    top: 265px;
+    left: 230px;
+}
+
+.num6 {
+    top: 280px;
+    left: 160px;
+}
+
+.num7{
+    top: 265px;
+    left: 95px;
+}
+
+.num8{
+    top: 220px;
+    left: 50px;
+}
+
+.num9{
+    top: 155px;
+    left: 30px;
+}
+
+.num10{
+    top: 85px;
+    left: 45px;
+}
+
+.num11{
+    top: 40px;
+    left: 100px;
+}
+
+.num12 {
+    top: 25px;
+    left: 155px;
+}
